@@ -1,0 +1,27 @@
+1. Create Database
+
+CREATE TABLE `users` (
+  `id_user` int(11) NOT NULL,
+  `username` text NOT NULL,
+  `password` text NOT NULL,
+  `date_created` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+ALTER TABLE `users`
+ADD PRIMARY KEY (`id_user`);
+ALTER TABLE `users`
+MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT;
+
+
+CREATE TABLE `messages` (
+  `id_msg` int(11) NOT NULL,
+  `body` longtext NOT NULL,
+  `user_from` text NOT NULL,
+  `date_sent` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+ALTER TABLE `messages`
+ADD PRIMARY KEY (`id_msg`);
+ALTER TABLE `messages`
+MODIFY `id_msg` int(11) NOT NULL AUTO_INCREMENT;
+
+2.
+
